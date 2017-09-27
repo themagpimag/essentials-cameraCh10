@@ -125,7 +125,7 @@ def hello_world():
     df = os.statvfs('/') # check if we're running out of disk space
     df_size = df.f_frsize * df.f_blocks
     df_avail = df.f_frsize * df.f_bfree
-    df_pc = round(100 -(100 * df_avail/df_size),1)
+    df_pc = round((100 * df_avail/df_size),1)
     print(btn1, btn2)
 
     # the default page to display will be our template with our template variables
